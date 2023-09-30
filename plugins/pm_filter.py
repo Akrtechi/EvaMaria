@@ -411,7 +411,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
-        ]]
+        ], [
+            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ',url='t.me/Movie_Meadia')
+       ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
