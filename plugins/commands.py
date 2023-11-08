@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/MM_Archives')
+                InlineKeyboardButton('⌬ Gʀᴏᴜᴘ ⌬', url='t.me/MM_Archives')
             ],
             [
-                InlineKeyboardButton('ℹ️ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('〄 Hᴇʟᴘ 〄', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,15 +42,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/MM_Archives')
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('⌬ Gʀᴏᴜᴘ ⌬', url='t.me/MM_Archives')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('〄 Hᴇʟᴘ 〄', callback_data='help'),
+            InlineKeyboardButton('〄 Aʙᴏᴜᴛ 〄', callback_data='about')
             ],[
-            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ',url='t.me/Movie_Meadia')
+            InlineKeyboardButton('⌬  Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⌬',url='t.me/Movie_Meadia')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,15 +90,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/MM_Archives')
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('⌬ Gʀᴏᴜᴘ ⌬', url='t.me/MM_Archives')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('〄 Hᴇʟᴘ 〄', callback_data='help'),
+            InlineKeyboardButton('〄 Aʙᴏᴜᴛ 〄', callback_data='about')
             ],[
-            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ',url='t.me/Movie_Meadia')
+            InlineKeyboardButton('⌬  Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⌬',url='t.me/Movie_Meadia')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
