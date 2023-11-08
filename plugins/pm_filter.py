@@ -404,12 +404,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/MM_Archives')
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('⌬ Gʀᴏᴜᴘ ⌬', url='t.me/MM_Archives')
         ], [
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('〄 Hᴇʟᴘ 〄', callback_data='help'),
             InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
         ], [
             InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ',url='t.me/Movie_Meadia')
